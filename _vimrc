@@ -74,9 +74,28 @@ map <F10> :colorscheme solarized<CR>
 " number
 set number
 
+" edit
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+"move"
+nnoremap i <Up>
+nnoremap j <Left>
+nnoremap k <Down>
+nnoremap l <Right>
+inoremap <C-j> <Left>
+inoremap <C-l> <Right>
+inoremap <C-k> <Down>
+inoremap <C-i> <Up>
+inoremap jk <Esc>
+" nmap <C-c> "+y
+" nmap <C-v> "+p
+
 " set past
-set noai nosi
-set paste
+" set noai nosi
+" set paste
 
 " set gui
 set guifont=Consolas:h12

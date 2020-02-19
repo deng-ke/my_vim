@@ -104,6 +104,19 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+"move"
+nnoremap i <Up>
+nnoremap j <Left>
+nnoremap k <Down>
+nnoremap l <Right>
+inoremap <C-j> <Left>
+inoremap <C-l> <Right>
+inoremap <C-k> <Down>
+inoremap <C-i> <Up>
+inoremap jk <Esc>
+" nmap <C-c> "+y
+" nmap <C-v> "+p
+
 " set gui
 set guifont=Noto\ Mono\ Regular\ 14
 set guioptions-=m
@@ -125,6 +138,7 @@ endif
 " fullscreen
 " sudo apt-get install wmctrl
 let g:fullscreen = 0
+         
 function! ToggleFullscreen()
     if g:fullscreen == 1
         let g:fullscreen = 0
