@@ -1,0 +1,8 @@
+set nocompatible
+
+let &rtp = '../../..,' . &rtp
+let &rtp .= ',../../../after'
+
+filetype plugin indent on
+syntax enable
+
