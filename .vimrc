@@ -114,8 +114,6 @@ inoremap <C-l> <Right>
 inoremap <C-k> <Down>
 inoremap <C-i> <Up>
 inoremap jk <Esc>
-" nmap <C-c> "+y
-" nmap <C-v> "+p
 
 " set gui
 set guifont=Noto\ Mono\ Regular\ 14
@@ -150,3 +148,7 @@ function! ToggleFullscreen()
     call system("wmctrl -ir " . v:windowid . " -b " . mod . ",fullscreen")
 endfunction
 map <silent> <F11> :call ToggleFullscreen()<CR>
+
+" key
+map <F5> :tabnew<CR>
+map <C-t> <F5><F2><F3>
